@@ -8,13 +8,6 @@ public class Order
     public User User { get; set; } = null!; 
     public DateTime Data { get; set; } = DateTime.UtcNow;
     public decimal Total { get; set; }
-    public enum Status
-    {
-        Pending,
-        Shipped,
-        Delivered,
-        Cancelled
-    }
     
     public OrderStatus Status { get; set; }
 
